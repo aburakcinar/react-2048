@@ -18,16 +18,38 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #faf8ef;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-game {
+    background-color: #faf8ef;
+  }
+
+  .bg-board {
+    background-color: #bbada0;
+  }
+
+  .bg-tile {
+    background-color: #cdc1b4;
+  }
 }
+
+@layer components {
+  .tile {
+    @apply bg-tile justify-center items-center size-32 rounded-md font-mono text-8xl font-bold;
+  }
+}
+
+/*
+2: #eee4da
+4: #ede0c8
+8: #f2b179
+16: #f49563
+32: #
+
+*/
